@@ -1,9 +1,13 @@
 window.onload = function () {
   const hoverBox = document.querySelector("#hover-box");
   const buttonRow = document.querySelector(".button-row");
+  const checkOutText = document.querySelector("#check-out");
+  const barcode = document.querySelector("#barcode");
+
+  AnimateText(barcode, "MYPORTFOLIO");
+  AnimateText(checkOutText, "CHECK OUT");
 
   buttonRow.addEventListener("mousemove", (e) => {
-    console.log("entering");
     hoverBox.style.background = "white";
     const bounding = buttonRow.getBoundingClientRect();
 
@@ -14,7 +18,13 @@ window.onload = function () {
   });
 
   buttonRow.addEventListener("mouseleave", (e) => {
-    console.log("leaving");
     hoverBox.style.background = "transparent";
   });
 };
+
+function AnimateText(element, target) {
+  gsap.to(element, {
+    duration: 5,
+    scrambleText: target,
+  });
+}

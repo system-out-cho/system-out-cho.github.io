@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
     <script src="landing_logic.js"></script>
     <link rel="stylesheet" href="landing.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,8 +32,30 @@
             <div id="hover-box"></div>
           </div>
         </div>
-        <div class="column" style="color: white">Column 2</div>
-        <div class="column" style="color: white">Column 3</div>
+        <div class="column" id="column2" style="color: white">
+          <div id="initials">YC</div>
+          <svg
+            id="tag"
+            xmlns="http://www.w3.org/2000/svg"
+            width="180"
+            height="180"
+            viewBox="0 0 180 180"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M39.6967 54.6967C42.6256 51.7678 47.3744 51.7678 50.3033 54.6967L80.3033 84.6967C81.7098 86.1032 82.5 88.0109 82.5 90C82.5 91.9891 81.7098 93.8968 80.3033 95.3033L50.3033 125.303C47.3744 128.232 42.6256 128.232 39.6967 125.303C36.7678 122.374 36.7678 117.626 39.6967 114.697L64.3934 90L39.6967 65.3033C36.7678 62.3744 36.7678 57.6256 39.6967 54.6967ZM140.303 54.6967C143.232 57.6256 143.232 62.3744 140.303 65.3033L115.607 90L140.303 114.697C143.232 117.626 143.232 122.374 140.303 125.303C137.374 128.232 132.626 128.232 129.697 125.303L99.6967 95.3033C96.7678 92.3744 96.7678 87.6256 99.6967 84.6967L129.697 54.6967C132.626 51.7678 137.374 51.7678 140.303 54.6967Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="column" id="column3" style="color: white">
+          <div class="titles">TECHNICAL ARTIST</div>
+          <div class="titles">PROGRAMMER</div>
+          <div class="titles">DESIGNER</div>
+          <div class="titles">STORYTELLER</div>
+        </div>
       </div>
     </div>
   </body>
