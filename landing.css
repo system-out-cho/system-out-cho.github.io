@@ -10,7 +10,7 @@
   background-color: transparent;
   box-sizing: border-box;
   border: 3px solid rgb(255, 255, 255);
-  width: 70vw;
+  width: 60vw;
   height: 30vh;
 
   display: flex;
@@ -68,7 +68,7 @@ button:hover {
   z-index: 0;
   position: absolute;
   /* background: rgb(255, 0, 0); */
-  width: 6vw;
+  width: 6em;
   height: 100%;
 
   pointer-events: none;
