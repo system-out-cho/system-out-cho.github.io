@@ -1,12 +1,38 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <script src="landing_logic.js"></script>
     <link rel="stylesheet" href="landing.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Libre+Barcode+128&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
+
+    <div class="container">
+      <div class="box">
+        <div class="column">
+          <div id="barcode">MYPORTFOLIO</div>
+          <div id="check-out">CHECK OUT</div>
+          <div class="button-row">
+            <button>3D WORK</button>
+            <button>CODE</button>
+            <button>GALLERY</button>
+            <button>ABOUT ME</button>
+            <div id="hover-box"></div>
+          </div>
+        </div>
+        <div class="column" style="color: white">Column 2</div>
+        <div class="column" style="color: white">Column 3</div>
+      </div>
+    </div>
   </body>
 </html>
