@@ -78,6 +78,10 @@ button {
   z-index: 1;
 }
 
+.link {
+  z-index: 2;
+}
+
 button:hover {
   transform: scale(1.05);
   color: black;

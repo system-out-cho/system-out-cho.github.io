@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Home</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="navbar.js"></script>
     <script src="landing_logic.js"></script>
     <link rel="stylesheet" href="landing.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,10 +30,18 @@
           <div id="barcode">MYPORTFOLIOYA</div>
           <div id="check-out">CHECK OUT</div>
           <div class="button-row">
-            <button class="section">3D WORK</button>
-            <button>CODE</button>
-            <button>GALLERY</button>
-            <button>ABOUT ME</button>
+            <a href="art.html" class="link">
+              <button>3D WORK</button>
+            </a>
+            <a href="#" class="link">
+              <button>CODE</button>
+            </a>
+            <a href="#" class="link">
+              <button>GALLERY</button>
+            </a>
+            <a href="#" class="link">
+              <button>ABOUT ME</button>
+            </a>
             <div id="hover-box"></div>
           </div>
         </div>

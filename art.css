@@ -1,0 +1,90 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fffce9;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+@view-transition {
+  navivation: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  min-width: 100%;
+  /* align-items: center; */
+}
+
+.column {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /* background-color: white; */
+}
+
+.title {
+  font-family: "Libre Barcode 39 Text", system-ui;
+  font-size: 5em;
+}
+
+#statement {
+  font-family: "Lexend", system-ui;
+  font-size: 6em;
+  font-weight: 300;
+  margin-top: 3%;
+}
+
+.button-row {
+  flex-direction: row;
+  align-items: flex-start; /* don't stretch button row the whole height */
+  display: flex;
+  margin-left: auto;
+  display: flex;
+  gap: 4rem;
+  position: relative;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: black;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+button:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.link {
+  z-index: 2;
+}
+
+#hover-box {
+  z-index: 0;
+  position: absolute;
+  /* background: rgb(255, 0, 0); */
+  width: 8em;
+  height: 100%;
+
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+#sticker_text {
+  margin-top: auto;
+  margin-left: auto;
+  padding-top: 20vh;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+}
