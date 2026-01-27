@@ -87,7 +87,7 @@ button:hover {
   z-index: 0;
   position: absolute;
   /* background: rgb(255, 0, 0); */
-  width: 6em;
+  width: 7em;
   height: 100%;
 
   pointer-events: none;
@@ -105,6 +105,16 @@ button:hover {
   font-size: 12em;
   line-height: 0.8;
   align-self: flex-end;
+}
+
+#madewith {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 3%;
+  margin-right: 2%;
 }
 
 #tag {
@@ -136,6 +146,8 @@ button:hover {
 
   background: transparent;
   pointer-events: none;
+
+  display: none;
 }
 
 .video-container {
