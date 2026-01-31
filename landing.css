@@ -142,18 +142,6 @@ button:hover {
   font-size: 1.2em;
 }
 
-#hover-box2 {
-  z-index: -1;
-  position: absolute;
-  width: 35%;
-  height: 1%;
-
-  background: transparent;
-  pointer-events: none;
-
-  display: none;
-}
-
 .video-container {
   height: 300px;
   width: 300px;
@@ -165,4 +153,32 @@ button:hover {
   height: 100%;
   position: absolute;
   z-index: 0;
+}
+
+@media (max-width: 1000px) {
+  .box {
+    flex-direction: column;
+  }
+
+  #barcode {
+    font-size: 3em;
+  }
+
+  #column2 {
+    display: none;
+  }
+
+  #column3 {
+    display: none;
+  }
+
+  .button-row {
+    margin-top: 15%;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #hover-box {
+    display: none;
+  }
 }
