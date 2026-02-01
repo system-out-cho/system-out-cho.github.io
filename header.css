@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fffce9;
+}
+
+.page {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  flex-direction: column;
+  /* min-width: 100%; */
+  /* align-items: center; */
+}
+
+.row {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /* background-color: white; */
+}
+
+.top-part {
+  display: flex;
+}
+
+.title {
+  font-family: "Libre Barcode 39 Text", system-ui;
+  font-size: 5em;
+}
+
+.button-row {
+  flex-direction: row;
+  align-items: flex-start; /* don't stretch button row the whole height */
+  display: flex;
+  margin-left: auto;
+  display: flex;
+  gap: 4rem;
+  position: relative;
+  height: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: black;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+button:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.link {
+  z-index: 2;
+}
+
+#hover-box {
+  z-index: 0;
+  position: absolute;
+  /* background: rgb(255, 0, 0); */
+  width: 8em;
+  height: 100%;
+
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 950px) {
+  .button-row {
+    /* display: none; */
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #hover-box {
+    display: none;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+  }
+}
