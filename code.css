@@ -23,6 +23,18 @@
   margin-top: 4dvh;
 }
 
+.swiper-pagination-custom {
+  padding-top: 2vh;
+}
+
+.swiper-pagination-bullets {
+  width: auto !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;

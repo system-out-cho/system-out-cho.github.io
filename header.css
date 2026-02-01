@@ -31,6 +31,12 @@ body {
   display: flex;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .title {
   font-family: "Libre Barcode 39 Text", system-ui;
   font-size: 5em;
