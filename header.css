@@ -39,7 +39,7 @@ a {
 
 .title {
   font-family: "Libre Barcode 39 Text", system-ui;
-  font-size: 5em;
+  font-size: clamp(2rem, 2rem + 2vw, 5rem);
 }
 
 .button-row {
@@ -58,7 +58,7 @@ button {
   border: none;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: clamp(1rem, 1rem, 1.25rem);
+  font-size: clamp(1rem, 0.75rem + 0.25vw, 1.25rem);
   color: black;
   z-index: 1;
   white-space: nowrap;
