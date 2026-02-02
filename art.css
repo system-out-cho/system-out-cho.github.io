@@ -1,6 +1,6 @@
 #statement {
   font-family: "Lexend", system-ui;
-  font-size: 6rem;
+  font-size: clamp(3rem, 5rem, 6rem);
   font-weight: 300;
   margin-top: 3%;
 
@@ -56,14 +56,14 @@
 .project-name {
   font-family: "Inter", sans-serif;
   letter-spacing: 0.1em;
-  font-size: 3em;
+  font-size: clamp(0.5rem, 3rem, 3rem);
   margin-top: 2%;
 }
 
 .description {
   margin-top: 2%;
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(0.25rem, 1rem, 1.5rem);
 }
 
 .learn-more summary {
@@ -71,6 +71,7 @@
   cursor: pointer;
   list-style: none;
   font-family: "Lexend";
+  font-size: clamp(0.5rem, 0.9rem, 1rem);
   font-weight: 700;
 }
 
