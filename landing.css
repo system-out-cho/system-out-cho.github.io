@@ -91,7 +91,7 @@ button:hover {
   z-index: 0;
   position: absolute;
   /* background: rgb(255, 0, 0); */
-  width: 7em;
+  width: clamp(4em, 5em + 1vw, 8em);
   height: 100%;
 
   pointer-events: none;
