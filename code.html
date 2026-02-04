@@ -3,20 +3,20 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code</title>
-    <link rel="stylesheet" href="code.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Libre+Barcode+128&family=Libre+Barcode+39+Text&display=swap"
       rel="stylesheet"
     />
-    <script src="navbar.js"></script>
+    <link rel="stylesheet" href="code.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="navbar.js"></script>
     <script>
       window.onload = function () {
         AddHoverToNav("black", "transparent");
@@ -50,28 +50,6 @@
   </head>
   <body>
     <div class="page">
-      <div class="header">
-        <div class="row">
-          <div class="top-part">
-            <a href="landing.html" class="title">CODE</a>
-            <div class="button-row">
-              <a href="art.html" class="link">
-                <button>3D WORK</button>
-              </a>
-              <a href="code.html" class="link">
-                <button>CODE</button>
-              </a>
-              <a href="#" class="link">
-                <button>GALLERY</button>
-              </a>
-              <a href="#" class="link">
-                <button>ABOUT ME</button>
-              </a>
-              <div id="hover-box"></div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="page-body">
         <div class="body-title">PROJECTS</div>
         <div class="swiper mySwiper">
@@ -100,5 +78,9 @@
         <div class="footer-text-small">AISLE-2</div>
       </div>
     </div>
+
+    <script>
+      AddNavBar("CODE");
+    </script>
   </body>
 </html>

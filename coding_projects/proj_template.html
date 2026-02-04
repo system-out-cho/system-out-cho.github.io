@@ -21,28 +21,6 @@
 
   <body>
     <div class="page">
-        <div class="header">
-          <div class="row">
-            <div class="top-part">
-              <a href="/code.html" id="go-back-button">[GO BACK]</a>
-              <div class="button-row">
-                <a href="/art.html" class="link">
-                  <button>3D WORK</button>
-                </a>
-                <a href="/code.html" class="link">
-                  <button>CODE</button>
-                </a>
-                <a href="#" class="link">
-                  <button>GALLERY</button>
-                </a>
-                <a href="#" class="link">
-                  <button>ABOUT ME</button>
-                </a>
-                <div id="hover-box"></div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="main-body">
             <div class="section-top">
                 <div class="project">
@@ -75,4 +53,11 @@
             </div>
         </div>
     </div>
+    <script>
+      AddNavBar("blank");
+      const title = document.querySelector(".title");
+      const backButton = document.createElement("back");
+      backButton.innerHTML = `<a href="/code.html" id="go-back-button">[GO BACK]</a>`;
+      title.replaceWith(backButton);
+    </script>
   </body>
