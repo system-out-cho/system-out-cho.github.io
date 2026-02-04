@@ -1,5 +1,3 @@
-const goBack = `<a href="/code.html" id="go-back-button">[GO BACK]</a>`;
-
 const buttonRow = `
   <div class="button-row">
     <a href="/art.html" class="link">
