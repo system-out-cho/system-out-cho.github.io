@@ -1,0 +1,154 @@
+html,
+body {
+    background-color: transparent !important;
+    overflow: hidden;
+}
+
+.title,
+button {
+    color: white;
+}
+
+button:hover {
+    color: black;
+}
+
+.page {
+    height: 100vh;
+}
+
+.page video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.page-body {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    justify-content: center;
+}
+
+.col-side {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+#right {
+    padding-left: 2%;
+    padding-top: 10%;
+}
+
+.text-top {
+    color: white;
+    border-bottom: 1px solid white;
+    display: inline-block;
+}
+
+.top-left-minor, 
+.right-minor {
+    font-family: "DM Sans";
+    font-weight: 250;
+}
+
+.top-left-major,
+.right-major {
+    font-family: "Bebas Neue";
+}
+
+.top-left-minor {
+    font-size: clamp(0.5rem, 2rem + 1vw, 4rem);
+}
+
+.top-left-major {
+    font-size: clamp(0.5rem, 3rem + 1vw, 6rem);
+}
+
+.right-major,
+.right-minor {
+    line-height: 3rem;
+}
+
+.right-major {
+    font-size: clamp(0.5rem, 1rem + 1.5vw, 4rem);
+}
+
+.right-minor {
+    font-size: clamp(0.5rem, 1rem + 0.25vw, 2rem);
+}
+
+.text-bottom-small {
+    color: white;
+    font-family: "DM Sans";
+    font-weight: 250;
+    line-height: 2.5rem;
+}
+
+.number {
+    font-size: clamp(1rem, 2rem, 3rem);
+}
+
+.label-1 {
+    font-family: "Bebas Neue";
+    font-size: clamp(1rem, 2rem, 3rem);
+}
+
+.label-2 {
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5rem, 3rem);
+}
+
+.image-container {
+    /* background-color: gray; */
+    min-width: 25vw;
+    height: auto;
+    width: 27vw;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.email,
+.resume {
+    color: white;
+    padding-top: 5%;
+    font-family: "DM Sans";
+    font-size: clamp(1rem, 1.5rem, 3rem);
+}
+
+.email {
+    font-weight: 200;
+}
+
+@media (max-width: 950px) {
+    html,
+    body {
+        overflow: visible;
+        background-color: black !important;
+    }
+
+    .page-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-side {
+        width: 100%;
+    }
+
+    #right {
+        padding-top: 0%;
+    }
+
+    .image-container {
+        width: 50vw;
+    }
+}

@@ -1,3 +1,7 @@
+html, body {
+  overflow: hidden;
+}
+
 .page-body {
   display: flex;
   margin-left: 4%;
