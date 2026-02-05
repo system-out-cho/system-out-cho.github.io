@@ -3,12 +3,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Libre+Barcode+128&family=Libre+Barcode+39+Text&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/styles/code.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link
@@ -18,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="/js/navbar.js"></script>
     <script>
+      ImportFonts();
       window.onload = function () {
         AddHoverToNav("black", "transparent");
         var swiper = new Swiper(".mySwiper", {

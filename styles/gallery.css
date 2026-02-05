@@ -68,3 +68,15 @@ button:hover {
     grid-column: col1-start / col3-start;
     grid-row: 7;
 }
+
+@media (max-width: 950px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(30vh, auto);
+    }
+
+    .a, .b, .d, .g, .j, .m, .n {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
