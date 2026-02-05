@@ -3,15 +3,15 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Template</title>
-    <link rel="stylesheet" href="proj_template.css" />
-    <link rel="stylesheet" href="/header.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/styles/proj_template.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="preconnect" href="/https://fonts.googleapis.com" />
+    <link rel="preconnect" href="/https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Libre+Barcode+128&family=Libre+Barcode+39+Text&display=swap"
       rel="stylesheet"
     />
-    <script src="/navbar.js"></script>
+    <script src="/js/navbar.js"></script>
     <script>
       window.onload = function () {
         AddHoverToNav("black", "transparent");
@@ -57,7 +57,7 @@
       AddNavBar("blank");
       const title = document.querySelector(".title");
       const backButton = document.createElement("back");
-      backButton.innerHTML = `<a href="/code.html" id="go-back-button">[GO BACK]</a>`;
+      backButton.innerHTML = `<a href="/pages/code.html" id="go-back-button">[GO BACK]</a>`;
       title.replaceWith(backButton);
     </script>
   </body>

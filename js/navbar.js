@@ -1,15 +1,15 @@
 const buttonRow = `
   <div class="button-row">
-    <a href="/art.html" class="link">
+    <a href="/pages/art.html" class="link">
       <button>3D WORK</button>
     </a>
-    <a href="/code.html" class="link">
+    <a href="/pages/code.html" class="link">
       <button>CODE</button>
     </a>
-    <a href="/gallery.html" class="link">
+    <a href="/pages/gallery.html" class="link">
       <button>GALLERY</button>
     </a>
-    <a href="/about.html" class="link">
+    <a href="/pages/about.html" class="link">
       <button>ABOUT ME</button>
     </a>
     <div id="hover-box"></div>
@@ -20,7 +20,7 @@ function AddNavBar(page_title) {
         <div class="header">
         <div class="row">
           <div class="top-part">
-            <a href="landing.html" class="title">${page_title}</a>
+            <a href="/index.html" class="title">${page_title}</a>
             ${buttonRow}
           </div>
         </div>

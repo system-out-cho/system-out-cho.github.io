@@ -2,12 +2,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #fffce9;
 }
 
 .page {
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .header {
@@ -51,6 +50,7 @@ a {
   gap: clamp(2rem, 3rem, 4rem);
   position: relative;
   height: 100%;
+  color: black;
 }
 
 button {
@@ -59,7 +59,6 @@ button {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: clamp(1rem, 0.75rem + 0.25vw, 1.25rem);
-  color: black;
   z-index: 1;
   white-space: nowrap;
 }
