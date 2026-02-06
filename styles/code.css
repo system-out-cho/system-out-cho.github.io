@@ -56,6 +56,18 @@ html, body {
   align-items: center;
 }
 
+/* style img-wrapper so that image is above the project-title */
+
+.project-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* Ensures it sits on top */
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;

@@ -34,7 +34,7 @@ body {
   /* background-color: aqua; */
   border-top: 2px solid black;
   margin-bottom: 2%;
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 .project-column-1 {
@@ -94,13 +94,18 @@ body {
   transform: translateY(0);
 }
 
-.video-container {
+.media-container {
   height: 100%;
-  width: 100%;
+  width: 100;
   margin-top: 5%;
 }
 
-.video-container iframe {
+.media-container iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.media-container img {
   height: 100%;
   width: 100%;
 }
