@@ -11,37 +11,8 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="/js/navbar.js"></script>
-    <script>
-      ImportFonts();
-      window.onload = function () {
-        AddHoverToNav("black", "transparent");
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 10,
-
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 30,
-            },
-          },
-          
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-
-          pagination: {
-            el: ".swiper-pagination-custom",
-            clickable: true,
-          },
-        });
-      };
-    </script>
+    <script>ImportFonts();</script>
+    <script src="/js/codeprojs.js"></script>
   </head>
   <body>
     <div class="page">
@@ -52,19 +23,15 @@
             <div class="swiper-slide">
               <div class="img-wrapper">
                 <a href="/pages/project_pages/proj_template.html" class="project-link">
-                  <img src="/content/pixar-code-image-test.png" alt="test-image">
+                  <div class="project-title">[ Interactive Blender Visuals ]</div>
+                  <img class="fade-mask" src="/content/pixar-code-image-test.png" alt="test-image">
                 </a>
               </div>
-              <div class="project-title">Interactive Blender Visuals</div>
             </div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
             <div class="swiper-slide">Slide 4</div>
             <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
           </div>
         </div>
         <div class="swiper-button-prev"></div>
