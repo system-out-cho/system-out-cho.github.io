@@ -1,4 +1,4 @@
-[
+const data = [
     {
         "link": "proj_template.html",
         "title": "Interactive Blender Visuals",

@@ -1,4 +1,4 @@
-const path = '/json/CodingProjects.json'
+// const path = '/json/CodingProjects.json'
 // const pagePath = '/pages/code.html'
 
 
@@ -32,25 +32,26 @@ window.onload = function () {
         },
     });
 
-    fetchJsonData()
-    .then(data => setPageInformation(data));
+    // fetchJsonData()
+    // .then(data => setPageInformation(data));
+    setPageInformation();
 };
 
 
-async function fetchJsonData() {
-  try {
-    const response = await fetch(path);
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error fetching JSON:', error);
-  }
-}
+// async function fetchJsonData() {
+//   try {
+//     const response = await fetch(path);
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok');
+//     }
+//     const data = await response.json();
+//     return data;
+//   } catch (error) {
+//     console.error('Error fetching JSON:', error);
+//   }
+// }
 
-function setPageInformation(data) {
+function setPageInformation() {
     const swiper_wrapper = document.querySelector(".swiper-wrapper");
     console.log(data);
     console.log(swiper_wrapper);
