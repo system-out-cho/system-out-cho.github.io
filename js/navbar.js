@@ -1,15 +1,17 @@
+const repoName = "Portfolio-Current";
+
 const buttonRow = `
   <div class="button-row">
-    <a href="pages/art.html" class="link">
+    <a href="/pages/art.html" class="link">
       <button>3D WORK</button>
     </a>
-    <a href="pages/code.html" class="link">
+    <a href="/pages/code.html" class="link">
       <button>CODE</button>
     </a>
-    <a href="pages/gallery.html" class="link">
+    <a href="/pages/gallery.html" class="link">
       <button>GALLERY</button>
     </a>
-    <a href="pages/about.html" class="link">
+    <a href="/pages/about.html" class="link">
       <button>ABOUT ME</button>
     </a>
     <div id="hover-box"></div>
