@@ -1,5 +1,3 @@
-const repoName = "Portfolio-Current";
-
 const buttonRow = `
   <div class="button-row">
     <a href="/pages/art.html" class="link">
