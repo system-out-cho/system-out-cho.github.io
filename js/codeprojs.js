@@ -1,5 +1,5 @@
-const pagePath = "./pages/project_pages/";
-const imagePath = "./content/";
+const pagePath = "../pages/project_pages/";
+const imagePath = "../content/";
 
 window.onload = function () {
   //add hover for nav
