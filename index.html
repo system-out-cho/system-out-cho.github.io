@@ -1,18 +1,19 @@
 <!doctype html>
 <html>
   <head>
-    <script src="/js/navbar.js"></script>
-    <script>ImportFonts();</script>
+    <script src="./js/navbar.js"></script>
+    <script>
+      ImportFonts();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
-    <script src="/js/landing_logic.js"></script>
-    <link rel="stylesheet" href="/styles/landing.css" />
+    <script src="./js/landing_logic.js"></script>
+    <link rel="stylesheet" href="./styles/landing.css" />
   </head>
 
   <body>
-
     <div class="container">
       <video autoplay muted loop id="background">
         <source src="/content\web_cover.mp4" type="video/mp4" />
@@ -27,7 +28,7 @@
             col1.insertAdjacentHTML("beforeend", buttonRow);
           </script>
         </div>
-        
+
         <div class="column" id="column2" style="color: white">
           <div id="initials">YC</div>
           <svg
