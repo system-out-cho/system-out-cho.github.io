@@ -17,14 +17,14 @@ const buttonRow = `
 
 function AddNavBar(page_title) {
   const navTemplate = `
-        <div class="header">
-        <div class="row">
-          <div class="top-part">
-            <a href="/index.html" class="title">${page_title}</a>
-            ${buttonRow}
-          </div>
+    <div class="header">
+      <div class="row">
+        <div class="top-part">
+          <a href="/index.html" class="title">${page_title}</a>
+          ${buttonRow}
         </div>
-      </div>`;
+      </div>
+    </div>`;
   
   const page = document.querySelector(".page");
   page.insertAdjacentHTML('afterbegin', navTemplate);

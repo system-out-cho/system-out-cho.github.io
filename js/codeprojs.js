@@ -1,5 +1,5 @@
-// const path = '/json/CodingProjects.json'
-// const pagePath = '/pages/code.html'
+const pagePath = '/pages/project_pages/';
+const imagePath = '/content/';
 
 
 window.onload = function () {
@@ -52,6 +52,20 @@ window.onload = function () {
 
 function setPageInformation() {
     const swiper_wrapper = document.querySelector(".swiper-wrapper");
-    console.log(data);
-    console.log(swiper_wrapper);
+    
+    for (let i = 0; i < data.length; i++) {
+        const proj = data[i];
+        const slideTemplate = `
+            <div class="swiper-slide">
+                <div class="img-wrapper">
+                    <a href="${pagePath + proj.link}" class="project-link">
+                        <div class="project-title">[ ${proj.title} ]</div>
+                        <img class="fade-mask" src="${imagePath + proj.image}" alt=${proj.alt}>
+                    </a>
+                </div>
+            </div>`;
+        
+        swiper_wrapper.insertAdjacentHTML('beforeend', slideTemplate);
+    }
+
 }
