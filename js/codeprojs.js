@@ -4,7 +4,6 @@
 
 window.onload = function () {
     //add hover for nav
-    AddHoverToNav("black", "transparent");
     //making new swiper 
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
