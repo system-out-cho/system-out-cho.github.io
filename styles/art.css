@@ -103,6 +103,8 @@ body {
 .media-container iframe {
   height: 100%;
   width: 100%;
+  min-width: 40vw;
+  min-height: 40vh;
 }
 
 .media-container img {
