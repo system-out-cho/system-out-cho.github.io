@@ -153,7 +153,7 @@ body {
     font-size: medium;
   }
 
-  .video-container iframe {
+  .media-container iframe {
     min-height: 25vh;
   }
 }
