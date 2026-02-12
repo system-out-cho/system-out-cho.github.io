@@ -70,6 +70,7 @@
 .img-container-bottom {
     background-color: gray;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .img-container {
@@ -101,6 +102,12 @@
 
 .img-desc {
     padding-top: 2%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 950px) {
