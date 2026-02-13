@@ -47,8 +47,15 @@ function makeProjHTML(data_obj) {
   }
 
   if (summary_exists) {
+    let ref_html_string = "";
+
     for (let i = 0; i < refs_arr.length; i++) {
       const ref = refs_arr[i];
+      const ref_html = `
+          <div class="ref-image-container">
+            <img src="../content/3d_art/ref/${ref}" />
+          </div>`;
+      ref_html_string += ref_html;
     }
 
     summaryTemplate = `        
@@ -56,9 +63,9 @@ function makeProjHTML(data_obj) {
             <summary>LEARN MORE</summary>
             <div class="expanded-content">
                 <p>Extra content here Lorem Ipsum asjdklajdasjdasjd.</p>
+                ${ref_html_string}
             </div>
-        </details>
-    `;
+        </details>`;
   } else {
     summaryTemplate = ``;
   }
