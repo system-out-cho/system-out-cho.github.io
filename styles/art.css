@@ -96,8 +96,9 @@ body {
 
 .media-container {
   height: 100%;
-  width: 100;
   margin-top: 5%;
+  width: auto;
+  max-height: fit-content;
 }
 
 .media-container iframe {
