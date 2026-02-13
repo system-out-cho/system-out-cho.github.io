@@ -6,5 +6,6 @@ const data = [
     summary_link: "",
     media_type: "video",
     media_link: "https://www.youtube.com/embed/A_caxCQkZlc?si=JTEafP2pK5UKZHJJ",
+    refs: ["space_men_ref.png", "peaky_ref.jpg"],
   },
 ];

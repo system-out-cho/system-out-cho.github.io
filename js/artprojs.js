@@ -21,6 +21,7 @@ function makeProjHTML(data_obj) {
   const type = data_obj.media_type;
   const media_link = data_obj.media_link;
   const summary_exists = data_obj.summary_exists;
+  const refs_arr = data_obj.refs;
 
   if (type === "video") {
     media = `<iframe
@@ -46,6 +47,10 @@ function makeProjHTML(data_obj) {
   }
 
   if (summary_exists) {
+    for (let i = 0; i < refs_arr.length; i++) {
+      const ref = refs_arr[i];
+    }
+
     summaryTemplate = `        
         <details class="learn-more">
             <summary>LEARN MORE</summary>
