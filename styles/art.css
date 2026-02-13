@@ -112,6 +112,17 @@ body {
   width: 100%;
 }
 
+.ref-image-container {
+  width: 50%;
+  height: auto;
+}
+
+.ref-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 600px) {
   html,
   body {
