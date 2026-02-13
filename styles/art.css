@@ -85,6 +85,7 @@ body {
   opacity: 0;
   font-family: "Inter", sans-serif;
   transform: translateY(-5px);
+  max-width: 75ch;
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
@@ -96,27 +97,21 @@ body {
 }
 
 .media-container {
-  height: 100%;
   margin-top: 5%;
-  width: auto;
-  max-height: fit-content;
+  width: 45vw;
+  aspect-ratio: 16 / 9;
 }
 
-.media-container iframe {
-  height: 100%;
-  width: 100%;
-  min-width: 40vw;
-  min-height: 40vh;
-}
-
+.media-container iframe,
 .media-container img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .ref-image-container {
   width: 50%;
-  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 .ref-image-container img {
