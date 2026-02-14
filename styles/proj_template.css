@@ -104,7 +104,8 @@
     padding-top: 2%;
 }
 
-img {
+
+iframe, img {
     height: 100%;
     width: 100%;
     object-fit: cover;

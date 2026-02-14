@@ -84,6 +84,7 @@ body {
 .learn-more .expanded-content {
   opacity: 0;
   font-family: "Inter", sans-serif;
+  font-size: clamp(0.2rem, 0.3rem + 0.5vw, 1rem);
   transform: translateY(-5px);
   max-width: 75ch;
   transition:
@@ -100,6 +101,7 @@ body {
   margin-top: 5%;
   width: 45vw;
   aspect-ratio: 16 / 9;
+  max-height: 50vh;
 }
 
 .media-container iframe,
