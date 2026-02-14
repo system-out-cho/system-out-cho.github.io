@@ -12,7 +12,6 @@ window.onload = function () {
 function buildPage() {
     const proj_title = this.document.querySelector(".project-title").outerHTML;
     const proj_desc = this.document.querySelector(".project-desc").outerHTML;
-    const img_desc = this.document.querySelector(".img-desc").outerHTML;
 
     //selecting all elements with class of media
     const mediaElements = this.document.querySelectorAll(".media");
@@ -31,38 +30,50 @@ function buildPage() {
         mediaArr.push(mediaHTML);
     }
 
+    let bottomSection = "";
+
+    if (mediaElements.length != 1) {
+        const img_desc = this.document.querySelector(".img-desc").outerHTML;
+        bottomSection = `
+            <div class="section-bottom">
+                <div class="img-holder">
+                    <div class="img-container-bottom">
+                    ${mediaArr[1]}
+                    </div>
+                    <div class="img-container-bottom">
+                    ${mediaArr[2]}
+                    </div>
+                    </div>
+                    ${img_desc}
+                    </div>
+                </div>
+            </div>`;
+    } 
+
     const currentHTML = `
     <!doctype html>
     <html>
         <body>
             <div class="page">
-            <div class="main-body">
-                <div class="section-top">
-                    <div class="project">
-                        ${proj_title}
-                        <div class="tags-list"></div>
-                        ${proj_desc}
-                    </div>
-                    <div class="img-container">
-                        ${mediaArr[0]}
-                    </div>
-                </div>
-                <div class="section-bottom">
-                    <div class="img-holder">
-                        <div class="img-container-bottom">
-                        ${mediaArr[1]}
+                <div class="main-body">
+                    <div class="section-top">
+                        <div class="project">
+                            ${proj_title}
+                            <div class="tags-list"></div>
+                            ${proj_desc}
                         </div>
-                        <div class="img-container-bottom">
-                        ${mediaArr[2]}
+                        <div class="img-container">
+                            ${mediaArr[0]}
                         </div>
                     </div>
-                    ${img_desc}
+                    ${bottomSection}
                 </div>
-            </div>
             </div>
         </body>
     </html>
     `;
+
+    
     document.body.innerHTML = currentHTML;
 }
 
