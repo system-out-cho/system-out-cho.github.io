@@ -84,9 +84,13 @@
     min-height: 50vh;
 }
 
-.project-desc,
-.img-desc {
+.project-desc p,
+.img-desc p {
     font-family: "Inter", sans-serif;
+}
+
+.project-desc p {
+    max-width: 100ch;
 }
 
 .project-desc {
@@ -109,6 +113,11 @@ iframe, img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.hyper-link {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 @media (max-width: 950px) {
