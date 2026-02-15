@@ -1,16 +1,29 @@
 const imagePath = "../content/3d_art/";
 
 window.onload = function () {
-  console.log("testing");
   setPageInformation();
   scrollToHashIfExists();
+  gsapAnimation();
+
 };
+
+function gsapAnimation() {
+  // split elements with the class "split" into words and characters
+  let split = SplitText.create("#statement", { type: "words, chars" });
+
+  // now animate the characters in a staggered fashion
+  gsap.from(split.chars, {
+    duration: 0.5, 
+    y: 50,       // animate from 100px below
+    autoAlpha: 0, // fade in from opacity: 0 and visibility: hidden
+    stagger: 0.02 // 0.05 seconds between each
+  });
+}
 
 function setPageInformation() {
   let page_body = document.querySelector(".page-body");
 
   for (let i = data.length - 1; i >= 0; i--) {
-    console.log(data[i]);
     const data_obj = data[i];
     const projHTML = makeProjHTML(data_obj);
     page_body.insertAdjacentHTML("afterbegin", projHTML);
@@ -95,7 +108,6 @@ function makeProjHTML(data_obj) {
 
 function scrollToHashIfExists() {
   const hash = window.location.hash;
-  console.log(hash);
   if (!hash) return;
 
   const el = document.querySelector(hash);

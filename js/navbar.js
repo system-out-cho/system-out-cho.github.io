@@ -56,3 +56,11 @@ function ImportFonts() {
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Libre+Barcode+128&family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">`;
   head.insertAdjacentHTML("afterbegin", imports);
 }
+
+function animateTitle(duration) {
+  const title = document.querySelector(".title");
+  gsap.to(title, {
+    duration: duration,
+    scrambleText: title,
+  });
+}

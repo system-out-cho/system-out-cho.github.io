@@ -5,6 +5,9 @@
     <title>About Me</title>
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/about.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
+    <script src= "https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="../js/navbar.js"></script>
     <script>
       ImportFonts();
@@ -19,7 +22,7 @@
 
       <div class="page-body">
         <div class="col-side" id="left">
-          <div class="text-top">
+          <div class="text-top split">
             <p>
               <span class="top-left-minor">Born in </span>
               <span class="top-left-major">Seoul, South Korea, </span>
@@ -28,7 +31,7 @@
               >
             </p>
           </div>
-          <div class="text-bottom-small">
+          <div class="text-bottom-small split">
             <p>
               With <span class="number"> 120+</span> custom Spotify playlists,
               he constantly finds inspiration in music, art, and emerging
@@ -46,7 +49,7 @@
           />
         </div>
         <div class="col-side" id="right">
-          <div class="text-top">
+          <div class="text-top split">
             <p>
               <span class="right-minor"
                 >In his free time, he loves to go on&nbsp</span
@@ -58,8 +61,8 @@
               >
             </p>
           </div>
-          <span class="email">Email: yuchan722cho@gmail.com</span>
-          <a href="#" class="resume">Resume here.</a>
+          <span class="email split">Email: yuchan722cho@gmail.com</span>
+          <a href="#" class="resume split">Resume here.</a>
         </div>
       </div>
     </div>
@@ -67,6 +70,20 @@
     <script>
       AddNavBar("ABOUT ME");
       AddHoverToNav("white", "transparent");
+      animateTitle(2);
+    </script>
+
+    <script>
+      // split elements with the class "split" into words and characters
+      let split = SplitText.create(".split", { type: "words, chars" });
+
+      // now animate the characters in a staggered fashion
+      gsap.from(split.chars, {
+        duration: 0.5, 
+        y: 25,       // animate from 100px below
+        autoAlpha: 0, // fade in from opacity: 0 and visibility: hidden
+        stagger: 0.01 // 0.05 seconds between each
+      });
     </script>
   </body>
 </html>
