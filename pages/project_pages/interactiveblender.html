@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../styles/proj_template.css" />
+        <link rel="stylesheet" href="../../styles/header.css" />
+        <script src="../../js/navbar.js"></script>
+        <script src="../../js/project_template.js"></script>
+        <script>ImportFonts();</script>
+        <title>Interactive Blender Visuals</title>
+    </head>
+    <body>
+        <div class="project-title">Interactive Blender Visuals</div>
+        <script>
+            const lang_tags = ["Python"];
+            const software_tags = ["Blender"];
+            storeTags(lang_tags, software_tags);
+        </script>
+        <div class="project-desc">
+            <p>
+                This was my final individual project for the PUP internship at Pixar. It involved taking my amazing mentor's 
+                (Michael Frederickson) MIDI Fighter Twister and mapping its controls to a Blender Python script. Although simple 
+                in concept, the way you could play with music and visuals simultaneously in REAL TIME was such an amazing experience.
+            </p>
+        </div>
+        <div class="media video" data-video-src="https://www.youtube.com/embed/1ak_QOuNeP8?si=kXoFyecL7RutPzlx"></div>
+        <div class="media video" data-video-src="https://www.youtube.com/embed/vMa7uRhdlbc?si=abCzfhMjSrNZ65uH"></div>
+        <img class = "media image" src="../../content/melodymidi.jpg">
+        <div class="img-desc">
+                <p>
+                    I essentially took in inputs from the controller into Blender with the rtmidi API and mapped it to various aspects 
+                    of Blender like camera controls, animation, shading, basically anything I could program or change with a knob or a 
+                    press I did. Through this process, I was able to make a small “show” demonstrating its capabilities and ended up 
+                    performing it in front of lots of Pixar employees! The show involved creating one or two shots and slowly bringing 
+                    each component of the shot in with layers to a song. I split Kendrick Lamar's “All The Stars” into different components 
+                    like the bass, vocals, etc. When the bass kicked in, certain elements would appear on the scene. It was so fun, that 
+                    I ended up buying my own MIDI Fighter Twister much later… 
+                </p>
+        </div>
+    </body>
+</html>

@@ -1,15 +1,15 @@
 const data = [
   {
-    link: "proj_template_test.html",
+    link: "interactiveblender.html",
     title: "Interactive Blender Visuals",
     image: "pixar-code-image-test.png",
-    alt: "An image of a computer screen.",
+    alt: "An image of a computer screen and MIDI controller.",
   },
   {
     link: "displayhistory.html",
     title: "ComfyUI Display History",
     image: "displayHistory.png",
-    alt: "An image of a computer screen.",
+    alt: "An image of a ComfyUI node",
   },
   {
     link: "#",

@@ -28,15 +28,20 @@
             </p>
         </div>
         <div class="media video" data-video-src="https://www.youtube.com/embed/q4IHmK-G2gs?si=FMfNTyi7WDh2RQU4"></div>
-        <img class ="media" src="../../content/test_image2.jpg">
-        <img class = "media" src="../../content/test_image2.jpg">
+        <img class ="media image" src="../../content/displayOptions.png">
+        <img class = "media image" src="../../content/dh_registry.png">
         <div class="img-desc">
                 <p>
                     During my internship with MAKE, we worked a lot with ComfyUI and experimenting with new ways
                     to interact with upcoming technologies. After developing our workflow, I noticed that it was 
                     very inconvenient to have to track my past parameters for any given node. This led to the development
                     of this node calld DisplayHistory, which holds past parameter data for every node in the workflow. 
-                    Parameters are stored when a workflow is successfully run.
+                    Parameters are stored when a workflow is successfully run. The skeleton of the node is made in Python,
+                    but a majority of the its processes and data handling occurs in javascript. Every time a workflow is successfully run 
+                    each node's data is passed onto a function that stores all the parameters, and Display History shows the stored data.
+                    The core functionality was implemented pretty quickly, but debugging issues like having new nodes in a workflow,
+                    deleting nodes, changing node names, working through when the data should be stored were all 
+                    difficult challenges during development.
                 </p>
         </div>
     </body>
