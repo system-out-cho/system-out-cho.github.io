@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../styles/proj_template.css" />
+        <link rel="stylesheet" href="../../styles/header.css" />
+        <script src="../../js/navbar.js"></script>
+        <script src="../../js/project_template.js"></script>
+        <script>ImportFonts();</script>
+        <title>AI Pose Recognition</title>
+    </head>
+    <body>
+        <div class="project-title">AI Pose Recognition</div>
+        <script>
+            const lang_tags = ["Python", "Mediapipe"];
+            const software_tags = ["Unity"];
+            storeTags(lang_tags, software_tags);
+        </script>
+        <div class="project-desc">
+            <p>
+                During my time in the Electronic Artrium VIP at Georgia Tech, I was in charge of developing the pose programs that would take in coordinate data of hands, 
+                arms, eyes, etc and translate them (through lots of math equations and graphs) to how much a player was tilting or pointing. This data would then be used in
+                interactive games for our exhibit. 
+            </p>
+        </div>
+        <img class = "media image" src="../../content/pointing.jpg">
+        <img class = "media image" src="../../content/ducking_tilting.jpg">
+        <img class = "media image" src="../../content/flowers.jpg">
+        <div class="img-desc">
+                <p>
+                    One of the biggest challenges was that I was taking data from two cameras (front and side view) and had to utilize multithreading to obtain the data 
+                    simultaneously. Then, the points would be calculated on a separate thread after the data was processed. Points that resulted in errors (absurdly high
+                    numbers) also had to be averaged out so that they would not affect gameplay. The result was that a single point representing a player's pointing position
+                    would be sent to Unity via UDP to be used in the game. The process was similar for ducking and tilting with different calculations. The picture above on
+                    the right shows tape marking "cell positions" for areas that the user could point to (this was used for game logic).
+                </p>
+        </div>
+    </body>
+</html>
