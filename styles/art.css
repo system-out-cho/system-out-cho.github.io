@@ -183,4 +183,12 @@ body {
     align-items: center;
     text-align: center;
   }
+
+  .learn-more summary {
+    font-size: 0.7rem;
+  }
+
+  .learn-more .expanded-content {
+    font-size: 0.8rem;
+  }
 }
