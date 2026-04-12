@@ -63,7 +63,7 @@ const data = [
   {
     project_name: "LOST IN SPACE",
     id: "lost-in-space",
-    desc: `A compilation of my past creative works, including personal and internship projects.`,
+    desc: `Personal project intended for lighting and composition practice.`,
     summary: `By following a still from the movie Alien, I decided to incorporate my own style into the work! Responsible for layout, lighting, and composition.`,
     media_type: "image",
     media_link: "spacemen.png",
