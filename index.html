@@ -1,15 +1,16 @@
 <!doctype html>
 <html>
   <head>
-    <script src="./js/navbar.js"></script>
-    <script>
-      ImportFonts();
-    </script>
+    <script src="./js/navbar.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Libre+Barcode+128&family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
-    <script src="./js/landing_logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js" defer></script>
+    <script src="./js/landing_logic.js" defer></script>
     <link rel="stylesheet" href="./styles/landing.css" />
   </head>
 
@@ -23,10 +24,6 @@
         <div class="column" id="column1">
           <div id="barcode">MYPORTFOLIOYA</div>
           <div id="check-out">CHECK OUT</div>
-          <script>
-            const col1 = document.querySelector("#column1");
-            col1.insertAdjacentHTML("beforeend", buttonRow);
-          </script>
         </div>
 
         <div class="column" id="column2" style="color: white">

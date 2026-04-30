@@ -1,4 +1,7 @@
 window.onload = function () {
+  const col1 = document.querySelector("#column1");
+  col1.insertAdjacentHTML("beforeend", buttonRow);
+  
   AddHoverToNav("white", "transparent");
 
   const checkOutText = document.querySelector("#check-out");
